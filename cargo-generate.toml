@@ -2,6 +2,9 @@
 cargo_generate_version = ">=0.18.0"
 description = "VillageSQL Rust extension template"
 
+[hooks]
+pre = ["pre-script.rhai"]
+
 [placeholders]
 description = { type = "string", prompt = "Extension description", default = "A VillageSQL extension" }
 author = { type = "string", prompt = "Author name" }
