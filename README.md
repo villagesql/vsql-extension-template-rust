@@ -1,4 +1,4 @@
-# vsql-rust-template
+# vsql-extension-template-rust
 
 A [cargo-generate](https://github.com/cargo-generate/cargo-generate) template for building [VillageSQL](https://github.com/villagesql/vsql-rust-sdk) extensions in Rust.
 
@@ -14,7 +14,7 @@ cargo install cargo-generate
 ## Usage
 
 ```sh
-cargo generate gh:villagesql/vsql-rust-template --name vsql_my_extension
+cargo generate gh:villagesql/vsql-extension-template-rust --name vsql_my_extension
 ```
 
 cargo-generate will prompt for:
