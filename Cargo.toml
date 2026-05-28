@@ -1,0 +1,12 @@
+[package]
+name = "{{crate_name}}"
+version = "0.1.0"
+edition = "2021"
+description = "{{description}}"
+license = "{{license}}"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+villagesql = "0.0.1"

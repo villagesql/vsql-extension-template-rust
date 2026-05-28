@@ -1,0 +1,9 @@
+[template]
+cargo_generate_version = ">=0.18.0"
+description = "VillageSQL Rust extension template"
+
+[placeholders]
+description = { type = "string", prompt = "Extension description", default = "A VillageSQL extension" }
+author = { type = "string", prompt = "Author name" }
+license = { type = "string", prompt = "License", default = "GPL-2.0" }
+sql_func_name = { type = "string", prompt = "SQL function name (e.g. rot13, my_func)" }

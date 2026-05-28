@@ -1,0 +1,19 @@
+INSTALL EXTENSION {{crate_name}};
+# Basic test
+SELECT {{sql_func_name}}('hello');
+{{sql_func_name}}('hello')
+hello
+# NULL input produces NULL output
+SELECT {{sql_func_name}}(NULL);
+{{sql_func_name}}(NULL)
+NULL
+# Works over a table column
+CREATE TABLE t1 (s VARCHAR(100));
+INSERT INTO t1 VALUES ('hello'), ('world'), (NULL);
+SELECT {{sql_func_name}}(s) FROM t1 ORDER BY s;
+{{sql_func_name}}(s)
+NULL
+hello
+world
+DROP TABLE t1;
+UNINSTALL EXTENSION {{crate_name}};
