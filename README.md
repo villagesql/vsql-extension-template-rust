@@ -35,6 +35,8 @@ vsql_my_extension/
 │       └── ci.yml          # fmt, clippy, audit, and cargo vsql test
 ├── Cargo.toml
 ├── manifest.json           # vsql extension manifest
+├── rust-toolchain.toml     # pins stable toolchain with rustfmt + clippy
+├── rustfmt.toml            # formatter config
 ├── src/
 │   └── lib.rs              # starter STRING → STRING function
 └── mysql-test/

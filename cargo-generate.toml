@@ -1,6 +1,7 @@
 [template]
 cargo_generate_version = ">=0.18.0"
 description = "VillageSQL Rust extension template"
+ignore = ["CONTRIBUTING.md", "SECURITY.md"]
 
 [hooks]
 pre = ["pre-script.rhai"]
@@ -9,4 +10,4 @@ pre = ["pre-script.rhai"]
 description = { type = "string", prompt = "Extension description", default = "A VillageSQL extension" }
 author = { type = "string", prompt = "Author name" }
 license = { type = "string", prompt = "License", default = "GPL-2.0" }
-sql_func_name = { type = "string", prompt = "SQL function name (e.g. rot13, my_func)" }
+sql_func_name = { type = "string", prompt = "SQL function name (e.g. rot13, my_func)", regex = "^[a-z_][a-z0-9_]*$" }
