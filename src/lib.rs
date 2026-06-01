@@ -1,5 +1,6 @@
 use villagesql::{InValue, VdfReturn};
 
+/// Returns its STRING argument unchanged. Replace with your extension's logic.
 fn {{sql_func_name}}_impl(args: &[InValue]) -> VdfReturn {
     match args.first() {
         Some(InValue::String(s)) => VdfReturn::string(s.to_string()),

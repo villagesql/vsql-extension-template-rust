@@ -44,7 +44,7 @@ jobs:
       actions: read
     steps:
       - uses: actions/checkout@v4
-      - uses: villagesql/extension-actions/rust@main
+      - uses: villagesql/extension-actions/rust@v1
         with:
           extension-name: {{crate_name}}
           github-token: $\{{ secrets.GITHUB_TOKEN }}
