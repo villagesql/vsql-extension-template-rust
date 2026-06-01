@@ -13,7 +13,7 @@ Open an issue at https://github.com/villagesql/vsql-extension-template-rust/issu
 ## Submitting changes
 
 1. Fork and create a feature branch.
-2. Make your change. If it affects the generated project, regenerate locally and confirm `cargo fmt --check`, `cargo clippy -- -D warnings`, and `cargo vsql test` still pass.
+2. Make your change. If it affects the generated project, regenerate locally and confirm `cargo fmt --check`, `cargo clippy -- -D warnings`, and `cargo vsql test` still pass. The `cargo vsql` subcommand requires `cargo-vsql` — install it with `cargo install cargo-vsql` if you don't already have it.
 3. Open a pull request describing the motivation and any user-visible impact. Pull requests must include signing the VillageSQL Contributor License Agreement (CLA) before they can be merged.
 
 ## Testing the template locally
