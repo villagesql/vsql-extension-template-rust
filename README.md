@@ -5,7 +5,9 @@ A [cargo-generate](https://github.com/cargo-generate/cargo-generate) template fo
 ## Prerequisites
 
 - [Rust toolchain](https://rustup.rs) (stable)
-- cargo-generate
+- cargo-generate 0.18 or higher (the template declares this floor and older
+  versions refuse to run it)
+- A completed VillageSQL build, for the install and test steps
 
 ```sh
 cargo install cargo-generate
