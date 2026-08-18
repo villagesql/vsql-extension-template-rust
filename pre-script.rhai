@@ -5,3 +5,9 @@
 // promote the scaffold's _github/ into its place.
 file::delete(".github");
 file::rename("_github", ".github");
+
+// Same treatment for README.md. The repo's own README documents how to run
+// cargo-generate, which is meaningless inside a generated project; _README.md
+// is the starter README for the extension itself.
+file::delete("README.md");
+file::rename("_README.md", "README.md");

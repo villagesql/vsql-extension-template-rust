@@ -1,6 +1,10 @@
 # vsql-extension-template-rust
 
-A [cargo-generate](https://github.com/cargo-generate/cargo-generate) template for building [VillageSQL](https://github.com/villagesql/vsql-rust-sdk) extensions in Rust.
+A [cargo-generate](https://github.com/cargo-generate/cargo-generate) template for building [VillageSQL](https://villagesql.com) extensions in Rust, on top of the [Rust SDK](https://github.com/villagesql/vsql-rust-sdk).
+
+**Docs:** [VillageSQL documentation](https://villagesql.com/docs) ·
+[Writing extensions in Rust](https://villagesql.com/docs/guides/rust-extensions) ·
+[Install VillageSQL Server](https://villagesql.com/install)
 
 ## Prerequisites
 
@@ -36,6 +40,7 @@ vsql_my_extension/
 │   └── workflows/
 │       └── ci.yml          # fmt, clippy, audit, and cargo vsql test
 ├── Cargo.toml
+├── README.md               # starter README for your extension
 ├── manifest.json           # vsql extension manifest
 ├── rust-toolchain.toml     # pins stable toolchain with rustfmt + clippy
 ├── rustfmt.toml            # formatter config
