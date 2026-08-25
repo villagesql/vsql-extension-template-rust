@@ -49,4 +49,4 @@ jobs:
           extension-name: {{crate_name}}
           github-token: ${{ "{{" }} secrets.GITHUB_TOKEN }}
           # A fixed release, so this build only changes when you change it.
-          villagesql-version: "0.0.5"
+          villagesql-version: "0.0.6"
