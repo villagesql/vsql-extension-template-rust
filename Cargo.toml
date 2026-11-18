@@ -9,4 +9,4 @@ license = "{{license}}"
 crate-type = ["cdylib"]
 
 [dependencies]
-villagesql = "0.0.6"
+villagesql = "0.0.7"
